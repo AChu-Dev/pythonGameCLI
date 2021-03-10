@@ -1,4 +1,5 @@
 class skills:
+    # def __init__(self, **kwargs)
     def __init__(self, skillId, skillName, skillDesc, skillRange, skillDamage, academics, occultism, charisma, athletics, skillRoll, skillMana, skillReq):
         self.skillId = skillId
         self.skillName = skillName
@@ -48,7 +49,7 @@ class skills:
         return(x)
 
     def __str__(self):
-        return f'({self.skillId},{self.skillName},{self.skillDesc},{self.skillDamage}, {self.skillModifiers[0]}, {self.skillModifiers[1]}, {self.skillModifiers[2]}, {self.skillModifiers[3]}, {self.skillRoll}, {self.skillMana}, {self.skillReq})'
+        return f'skills({self.skillId},{self.skillName},{self.skillDesc},{self.skillDamage}, {self.skillModifiers[0]}, {self.skillModifiers[1]}, {self.skillModifiers[2]}, {self.skillModifiers[3]}, {self.skillRoll}, {self.skillMana}, {self.skillReq})'
 
 
 skill0 = skills(0, "Gandr", "A application of a Norse Curse, compounded with a form of Gem Magecraft which allow the user to fire magical bullets that apply the curse on impact.", 15, "3-6", 0, -1, 0, 0, "Occultism", -2, "Gem")
@@ -60,4 +61,5 @@ skill5 = skills(5, "Divination", "The use of astrology and tarot, to predict the
 skill6 = skills(6, "Elemental Magics", "This is the manipulation of the base elements (Fire, Earth, Water, Wind & Ether)", 10, "2-7", 0, -2, 0, 0, "Occultism", -3, "")
 skill7 = skills(7, "Alchemy", "The concept of taking an object and using mana to change that object at an atomic level", 3, "3-5", -1,0,0,0, "Academics", -2, "Earth")
 skill8 = skills(8, "Mystic Eyes of Death Perception", "A degraded form of Balor's Evil Eyes, these are able to kill anything in creation.", 0, 1000, 0, 0,0 ,-3, "Athletics", -1, "Sanity")
-
+skill9 = skills(9, "Mystic Eyes of Enchantment", "The Golden Mystic Eyes possessed by Vampire-Kin, these cause complusion when used on a target", 3, "0", 0, 0, +2, 0, "Occultism", -1, "Vampire")
+skill10 = skills(10, "Vampiric Claws", "These allow a vampire to use their extreme physical strength as a weapon", 7, "4-8", 0,0,0,-2,"Athletics",-1,"Vampire")
